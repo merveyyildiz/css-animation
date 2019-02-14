@@ -1,0 +1,52 @@
+div {
+    height: 40px;
+    width: 40px;
+    background:green;
+    margin: 50px auto;
+    border-radius: 50%;
+    position: fixed;
+  }
+
+#rect {
+  animation-name: rainbow;
+  animation-duration: 1s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  left:40%;
+}
+#rect1{
+  animation-name: rainbow;
+  animation-duration: 2s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  left:50%;
+}
+#rect2{
+  animation-name: rainbow;
+  animation-duration: 2s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  left:60%;
+}
+@keyframes rainbow {
+  0% {
+    background-color: blue;
+    top: 0px;
+  }
+  25% {
+    background-color:red;
+  }
+  50% {
+    background-color: purple;
+  }
+  75% {
+    background-color:firebrick;
+  }
+  100% {
+    background-color: yellow;
+    top: 200px;
+  }
+}
